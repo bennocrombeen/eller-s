@@ -16,11 +16,11 @@ require_once 'Maze/Eller/Output.php';
 $maze = new \Maze\Eller\MazeCreator(10, 10, new \Maze\Eller\Output());
 $maze->start();
 
-
-
 $maze = new \Maze\Eller\MazeCreator(20, 20, new \Maze\Eller\Output());
 $maze->start();
 
-
 $maze = new \Maze\Eller\MazeCreator(50, 50, new \Maze\Eller\Output());
+$maze->start();
+
+$maze = new \Maze\Eller\MazeCreator(75, 75, new \Maze\Eller\Output());
 $maze->start();
