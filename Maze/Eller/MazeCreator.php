@@ -130,8 +130,10 @@ class MazeCreator
         $this->output->drawRow($this->createBitmapFromSet($connected_sets, $verticals));
 
         //this is the bottom, create ugly end, to fix later (yeah whatever)
-        if($this->counter == $this->height ){
+        if($this->counter == ( $this->height - 1) ){
             $this->output->drawBottom($this->width);
+            //ugliest fix but better ending
+            return;
         }
 
         //populate the next row, to fill the empty cells/sets

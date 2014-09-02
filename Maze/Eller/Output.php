@@ -45,6 +45,11 @@ class Output implements ConsoleInterface
 
     public function drawBottom($width)
     {
+        echo '|';
+        for($i = 0; $i < (($width * 2) - 1); $i++){
+            echo ' ';
+        }
+        echo '|' . PHP_EOL;
         $this->straightLine($width);
     }
 
